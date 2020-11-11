@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/BernardoAguayoOrtega/Building-Modern-Projects-with-React/issues"
   },
-  "homepage": "https://github.com/BernardoAguayoOrtega/Building-Modern-Projects-with-React#readme"
+  "homepage": "https://github.com/BernardoAguayoOrtega/Building-Modern-Projects-with-React#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5"
+  }
 }
