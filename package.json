@@ -1,0 +1,24 @@
+{
+  "name": "building-modern-projects-with-react",
+  "version": "1.0.0",
+  "description": "Learn about some of the most important tools in the React ecosystem that help you simplify development and manage the complexities of state, side effects, structure, and styling. ",
+  "main": "index.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BernardoAguayoOrtega/Building-Modern-Projects-with-React.git"
+  },
+  "keywords": [
+    "react.js",
+    "webpack",
+    "react-ecosystem"
+  ],
+  "author": "Bernardo Aguayo Ortega",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BernardoAguayoOrtega/Building-Modern-Projects-with-React/issues"
+  },
+  "homepage": "https://github.com/BernardoAguayoOrtega/Building-Modern-Projects-with-React#readme"
+}
