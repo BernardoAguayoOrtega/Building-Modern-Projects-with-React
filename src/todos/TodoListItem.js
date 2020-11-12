@@ -2,8 +2,10 @@
 const TodoListItem = ({ todo }) => (
   <div className="todo-item-conatiner">
     <h3>{todo?.text}</h3>
-    <button>Mark As Completed</button>
-    <button>Remove</button>
+    <div className="button-container">
+      <button className='completed-button'>Mark As Completed</button>
+      <button className='remove-button'>Remove</button>
+    </div>
   </div>
 )
 
