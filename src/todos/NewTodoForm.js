@@ -1,5 +1,7 @@
 // import hooks
 import { useState } from 'react'
+// import styles
+import './NewTodoForm.css'
 
 // new todo form component
 const NewTodoForm = () => {
@@ -15,7 +17,7 @@ const NewTodoForm = () => {
         value={inputValue}
         onChange={e => setInputValue(e.target.value)}
       />
-      <button className="new-todo-button"></button>
+      <button className="new-todo-button">Add</button>
     </div>
   )
 }
