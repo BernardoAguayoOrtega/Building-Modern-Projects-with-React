@@ -6,7 +6,7 @@ import App from './App.js';
 const root = document.getElementById('root');
 
 render(
-	<Provider store={configureStore}>
+	<Provider store={configureStore()}>
 		<App />
 	</Provider>,
 	root,
