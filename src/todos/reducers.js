@@ -51,9 +51,7 @@ export const todos = (state = [], action) => {
 		case LOAD_TODOS_SUCCESS:{
 			const { todos } = payload
 
-			console.log(todos)
-
-			return [...state, ...todos]
+			return todos
 		}
 		case LOAD_TODOS_IN_PROGRESS:
 		case LOAD_TODOS_FAILURE:
