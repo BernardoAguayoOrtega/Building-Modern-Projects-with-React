@@ -48,6 +48,15 @@ export const todos = (state = [], action) => {
 				todo.text === text ? { ...todo, isCompleted: true } : todo,
 			);
 		}
+		case LOAD_TODOS_SUCCESS:{
+			const { todos } = payload
+
+			console.log(todos)
+
+			return [...state, ...todos]
+		}
+		case LOAD_TODOS_IN_PROGRESS:
+		case LOAD_TODOS_FAILURE:
 		default:
 			return state;
 	}
