@@ -37,16 +37,16 @@ export const todos = (state = [], action) => {
 			return state.filter((todo) => todo.id !== todoToRemove?.id);
 		}
 		case MARK_TODO_AS_COMPLETED: {
-			const { text } = payload;
+			const { todo: updateTodo } = payload;
 
 			return state.map((todo) =>
-				todo.text === text ? { ...todo, isCompleted: true } : todo,
+				todo?.id === updateTodo?.id ? updateTodo : todo,
 			);
 		}
-		case LOAD_TODOS_SUCCESS:{
-			const { todos } = payload
+		case LOAD_TODOS_SUCCESS: {
+			const { todos } = payload;
 
-			return todos
+			return todos;
 		}
 		case LOAD_TODOS_IN_PROGRESS:
 		case LOAD_TODOS_FAILURE:
