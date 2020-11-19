@@ -3,6 +3,7 @@ import NewTodoForm from './NewTodoForm';
 import TodoListItem from './TodoListItem';
 import { connect } from 'react-redux';
 import { loadTodos, deleteTodoRequest, updateTodoRequest } from './thunks';
+import { getTodos, getTodosLoading } from './selectors';
 import './TodoList.css';
 
 // todo list component
@@ -11,7 +12,7 @@ const TodoList = ({
 	onRemovedPress,
 	isCompleted,
 	isLoading,
-	startLoadingTodos
+	startLoadingTodos,
 }) => {
 	useEffect(() => {
 		startLoadingTodos();
@@ -37,8 +38,8 @@ const TodoList = ({
 };
 
 const mapStateToProps = (state) => ({
-	todos: state.todos,
-	isLoading: state.isLoading,
+	todos: getTodos(state),
+	isLoading: getTodosLoading(state),
 });
 
 const mapDispatchToProps = (dispatch) => ({
