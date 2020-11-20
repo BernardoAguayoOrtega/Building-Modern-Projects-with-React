@@ -13,7 +13,6 @@ import './TodoList.css';
 
 // todo list component
 const TodoList = ({
-	todos = [],
 	onRemovedPress,
 	isCompleted,
 	isLoading,
@@ -53,7 +52,6 @@ const TodoList = ({
 };
 
 const mapStateToProps = (state) => ({
-	todos: getTodos(state),
 	isLoading: getTodosLoading(state),
 	completeTodos: getCompleteTodos(state),
 	incompleteTodos: getIncompleteTodos(state),
