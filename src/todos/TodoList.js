@@ -4,11 +4,11 @@ import TodoListItem from './TodoListItem';
 import { connect } from 'react-redux';
 import { loadTodos, deleteTodoRequest, updateTodoRequest } from './thunks';
 import {
-	getTodos,
 	getTodosLoading,
 	getCompleteTodos,
 	getIncompleteTodos,
 } from './selectors';
+import styled from 'styled-components';
 import './TodoList.css';
 
 // todo list component
