@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const TodoItemContainer = styled.div`
-	background: #fff;
+	background: whitesmoke;
 	border-radius: 8px;
 	margin-top: 8px;
 	padding: 16px;
